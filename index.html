@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+// sindi koifan 211657481 alon cohen 319039707
+
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>הרשמה למועדון לקוחות מיצי-נט</title>
+  <link rel="icon" href="https://www.gag-lachayot.co.il/wp-content/uploads/2018/11/cat.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body dir="rtl">
+  <div class="container">
+    <img src="https://www.gag-lachayot.co.il/wp-content/uploads/2018/11/cat.jpg" alt="לוגו מיצי-נט">   
+    
+    <p>"ברוכים הבאים למועדון הלקוחות של 'מיצי-נט'! אצלנו תמצאו לא רק ציוד מקצועי ואיכותי לחיות המחמד שלכם, אלא גם אווירה חמה ומקורית.
+     אנו מתחייבים לספק לכם שירות אישי, ייעוץ מקצועי ומבצעים משתלמים. הצטרפו עוד היום והפוך לחלק ממשפחת 'מיצי-נט'!" </p>
+    <form action="submit.php" method="post" onsubmit="return validateForm()">
+
+      <label for="fname">שם פרטי:</label>
+<input type="text" id="fname" name="firstname" required>
+
+<label for="lname">שם משפחה:</label>
+<input type="text" id="lname" name="lastname" required>
+
+<label for="phone">מספר טלפון:</label>
+<input type="tel" id="phone" name="phone" required>
+
+<label for="email">כתובת אימייל:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="password">סיסמא:</label>
+<input type="password" id="password" name="password" minlength="8" required>
+
+<label for="confirm_password">וידוא סיסמא:</label>
+<input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+
+<input type="submit" style="font-weight: bold;" value="הרשמה">
+
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
