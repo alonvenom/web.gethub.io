@@ -1,0 +1,109 @@
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(8, 206, 51); 
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+      margin: 20px;
+      padding: 10px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .container {
+      max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+      max-width: 800px;
+  }
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 222px;
+}
+
+p {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:not(.error),
+input[type="tel"]:not(.error),
+input[type="email"]:not(.error),
+input[type="password"]:not(.error) {
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 90%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border: 1px solid orange; 
+}
+
+input.error:not(.submit) {
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto 20px auto;
+  border-radius: 4px;
+  border: 1px solid red;
+}
+
+input.error.submit {
+  border: none;
+}
+
+input.error {
+  border: 1px solid red;
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto 20px auto;
+  border-radius: 4px;
+}
